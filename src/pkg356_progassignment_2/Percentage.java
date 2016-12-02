@@ -14,8 +14,10 @@ package pkg356_progassignment_2;
  */
 
 public class Percentage implements VisitProcedure{
-
-    public int accept(Visitor visitor) {
-        return visitor.visit(this);
-    }
+    public static int percentage;
+    public void accept() { percentage++; }
+    //public int accept(Visitor visitor) {
+    //    return visitor.visit(this);
+    //}
+    public int get() { return percentage; }
 }

@@ -16,5 +16,5 @@ package pkg356_progassignment_2;
  */
 
 public interface VisitProcedure {
-    public int accept (Visitor visitor);
+    public void accept ();
 }

@@ -18,6 +18,6 @@ package pkg356_progassignment_2;
 public class Driver {
     public static void main(String[] args)
     {
-        AdminControlPanel.getInst().run();
+        AdminCP.getInstance().setVisible(true);
     }
 }

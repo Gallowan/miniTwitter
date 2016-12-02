@@ -15,8 +15,8 @@ package pkg356_progassignment_2;
  */
 
 public interface Visitor {
-    int visit(UserCount userTotal);
-    int visit(MessageCount messageTotal);
-    int visit(GroupCount groupTotal);
-    int visit(Percentage positive);
+    public void visit(UserCount userTotal);
+    public void visit(MessageCount messageTotal);
+    public void visit(GroupCount groupTotal);
+    public void visit(Percentage positive);
 }

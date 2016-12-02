@@ -16,5 +16,5 @@ package pkg356_progassignment_2;
  */
 
 public interface Component {
-    public String getID();
+    public String getName();
 }

@@ -14,8 +14,10 @@ package pkg356_progassignment_2;
  */
 
 public class MessageCount implements VisitProcedure{
-
-    public int accept(Visitor visitor) {
-        return visitor.visit(this);
-    }
+    public static int messageCount;
+    public void accept() { messageCount++; }
+    //public int accept(Visitor visitor) {
+    //    return visitor.visit(this);
+    //}
+    public int get() { return messageCount; }
 }

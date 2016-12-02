@@ -14,7 +14,10 @@ package pkg356_progassignment_2;
  */
 
 public class UserCount {
-    public int accept(Visitor visitor) {
-        return visitor.visit(this);
-    }
+    public static int userCount;
+    public void accept() { userCount++; }
+    //public int accept(Visitor visitor) {
+    //    return visitor.visit(this);
+    //}
+    public int get() { return userCount; }
 }

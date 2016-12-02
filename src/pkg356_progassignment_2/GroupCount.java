@@ -14,9 +14,10 @@ package pkg356_progassignment_2;
  */
 
 public class GroupCount implements VisitProcedure{
-
-    public int accept(Visitor visitor) {
-        return visitor.visit(this);
-    }
-
+    public static int groupCount;
+    public void accept() { groupCount++; }
+    //public int accept(Visitor visitor) {
+    //    return visitor.visit(this);
+    //}
+    public int get() { return groupCount; }
 }

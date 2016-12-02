@@ -16,7 +16,8 @@ package pkg356_progassignment_2;
  */
 
 public interface Observable {
-    public void regObserver(Observer observer);
-    public void tellObserver();
-    public void remObserver(Observer observer);
+    //Originally named redObserver
+    public void followConfirm(String name);
+    public void tellObserver(String tweet);
+    //public void remObserver(Observer observer);
 }

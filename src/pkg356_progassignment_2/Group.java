@@ -14,20 +14,20 @@ import java.util.ArrayList;
  * 
  * ~Group Class~
  * Class that manages the group feature of the program.
- * Implemented on top of the Element interface.
+ * Implemented on top of the Component interface.
  */
 
-public class Group implements Element {
+public class Group implements Component {
     
     private String groupName;
     
-    private List<Element> userList;
-    private List<Element> groupList;
+    private List<Component> userList;
+    private List<Component> groupList;
 
     public Group(String name) {
         groupName = name;
-        userList = new ArrayList<Element>();
-        groupList = new ArrayList<Element>();
+        userList = new ArrayList<Component>();
+        groupList = new ArrayList<Component>();
     }
     
     public void newUser(User user) {
@@ -37,7 +37,7 @@ public class Group implements Element {
         groupList.add(group);
     }
     
-    public String getID() {
+    public String getName() {
         return groupName;
     }
 }
